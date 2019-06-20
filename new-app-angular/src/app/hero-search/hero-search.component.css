@@ -1,0 +1,78 @@
+/* HeroSearch private styles */
+h4{
+  color: black;
+  padding-top:10%;
+}
+.search-result li {
+  /* position: absolute; */
+  /* z-index: 10; */
+  /* margin-top: 102px; */
+  margin-left: 0;
+  border: 1px solid gray;
+  width: 289px;
+  height: 37px;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+  list-style-type: none;
+  border-radius: 4px;
+}
+.search-result li:hover {
+  background-color: #607D8B;
+}
+
+.search-result li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.search-result li a:hover {
+  color: white;
+}
+.search-result li a:active {
+  color: white;
+}
+#search-box {
+  width: 300px;
+  position: absolute;
+  z-index: 10;
+  margin-top: 0;
+  margin-left: 0;
+  
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+}
+
+
+ul.search-result {
+  position: absolute;
+  z-index: 11;
+  padding-left: 0;
+  margin-top:33px;
+}
+.placeid{
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.4em 0.4em 0 0.4em;
+  background-color: rgb(33, 32, 100);
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -2px;
+  height: 1.5em;
+  margin-right: .8em;
+  border-radius: 7px;
+}
+.search-result .placedesc{
+  font-size: 13px;
+  margin-left: 32px;
+}

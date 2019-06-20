@@ -1,0 +1,27 @@
+<div>
+  <strong>Google Maps!</strong>
+</div>
+<!-- 
+<ul class="search-result">
+  <li *ngFor="let hero of heroes$ | async"> -->
+
+<app-map-search (description)="description($event)" (description2)="description2($event)" (description3)="description3($event)" ></app-map-search>
+<div id="GoogleMap" class="map" #GoogleMap></div>
+<div class="location">
+<a><img src='assets\location-button.png' title="My Location" class="mylocation" (click)="showmylocation()"></a>
+</div>
+<div id='box' *ngIf='showDescritionUI'>
+  <div class="text">
+    <button class="close" (click)="handleClick()">x</button>
+    <span class ="placeid">{{boxid}}</span>  <span class='box-name'>{{boxname}}</span>
+    <p class='box-desc'>
+    <br>
+    {{boxdesc}}
+    <br>
+    Latitude: {{boxLat}} <br>
+    Longitude: {{boxLng}} 
+    </p>
+  </div>
+
+</div>
+

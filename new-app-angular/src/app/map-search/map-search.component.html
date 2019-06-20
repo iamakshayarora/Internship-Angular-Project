@@ -1,0 +1,10 @@
+<input #searchBox id="search-box"  [(ngModel)]="searchText" placeholder="Search for cities" (click)="showlist($event)" (keydown)="showlist($event)"/>
+
+<ul class="search-result">
+  <li id="demo{{i}}" title="{{hero.name}}" *ngFor="let hero of staticHeros| FilterPipe: searchText; let i = index">
+    <a (click)="descriptionTest(hero, i)" (mouseenter)="descriptionChange(hero)" > 
+      <span class="placeid">{{hero.id}}</span> {{hero.name}}
+      <div class="placedesc"> {{hero.desc}} </div>
+    </a>
+  </li>
+</ul>

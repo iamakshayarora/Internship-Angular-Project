@@ -1,0 +1,101 @@
+/* DashboardComponent's private CSS styles */
+[class*='col-'] {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  a {
+    text-decoration: none;
+    
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  h3 {
+    text-align: center; margin-bottom: 0;
+  }
+  h4 {
+    position: relative;
+  }
+  app-map-search{
+   padding-top: 10px;
+  }
+  .grid {
+    margin: 0;
+  }
+  .col-1-4 {
+    width: 25%;
+  }
+  .module {
+    padding: 2px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    max-height: 100px;
+    min-width: 120px;
+    background-color: rgb(185, 212, 212);
+    border-radius: 30px;
+    transition: border-radius 0.2s;
+  }
+  .module:hover {
+    background-color: rgb(88, 163, 224);
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+  .module:active {
+    background-color:rgb(33, 32, 100);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+
+  }
+  .grid-pad {
+    padding: 10px 0;
+  }
+  .grid-pad > [class*='col-']:last-of-type {
+    padding-right: 20px;
+  }
+  @media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+  }
+  @media (max-width: 400px) {
+    .grid-pad > [class*='col-']:last-of-type {
+      padding-right: 0;
+    }
+    .col-1-4 {
+      width: 100%;
+    }
+    [class*='col-'] {
+      padding-right: 0;
+      padding-bottom: 3px;
+    }
+    .module {
+      margin-left: 12%;
+      margin-right: 12%;
+      margin-bottom: 2%;
+    }
+    h4{
+    margin: 10px;
+    font-size: 10px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+  }

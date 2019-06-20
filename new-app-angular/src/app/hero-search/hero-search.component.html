@@ -1,0 +1,14 @@
+<div id="search-component">
+  <h4>Place Search</h4>
+
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Search for Places" />
+
+  <ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="placeid">{{hero.id}}</span> {{hero.name}}
+        <div class="placedesc"> {{hero.desc}} </div>
+      </a>
+    </li>
+  </ul>
+</div>

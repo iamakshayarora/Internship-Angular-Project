@@ -1,0 +1,269 @@
+.map {
+    height: 600px;
+    width: 100%;
+    background-color: grey;
+}
+.controls {
+        position: absolute;
+        z-index: 10;
+        margin-top: 46px;
+        
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      .search-result li {
+        margin-left: 10px;
+        border: 1px solid gray;
+        width: 289px;
+        height: 37px;
+        padding: 5px;
+        background-color: white;
+        cursor: pointer;
+        list-style-type: none;
+        border-radius: 4px;
+      }
+      
+      .search-result li:hover {
+        background-color: #607D8B;
+      }
+      
+      .search-result li a {
+        color: black;
+        display: block;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      
+      .search-result li a:hover {
+        color: white;
+      }
+      .search-result li a:active {
+        color: white;
+      }
+      #search-box {
+        width: 300px;
+        position: absolute;
+        z-index: 10;
+        margin-top: 72px;
+        margin-left: 10px;
+        
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        padding-left: 10px;
+      }
+      
+      
+      ul.search-result {
+        position: absolute;
+        z-index: 11;
+        margin-top: 0;
+        padding-left: 0;
+        margin-top:105px;
+      }
+      .placeid{
+        display: inline-block;
+        font-size: small;
+        color: white;
+        padding: 0.4em 0.4em 0 0.4em;
+        background-color: rgb(33, 32, 100);
+        line-height: 1em;
+        position: relative;
+        left: -1px;
+        top: -2px;
+        height: 1.5em;
+        margin-right: .8em;
+        border-radius: 7px;
+      }
+      .search-result .placedesc{
+        font-size: 13px;
+        margin-left: 32px;
+      }
+
+      #box{
+        background-color: white;
+        color: black;
+        width: 30%;
+        position: absolute;
+        margin-top: -13%;
+        margin-left: 36%;
+        height: 13%;
+        border-radius: 10px;
+      }
+      #box .text {
+        padding: 13px;
+        font-size: 12px;
+        
+      }
+      #box .text .close {
+        float: right;
+        margin-top: -10px;
+        margin-right: -10px;
+        color: black;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+      #box .text .close:hover {
+        background-color: rgb(151, 169, 179);
+        
+      }
+     .box-name{
+       font-size: 22px;
+     }
+     .box-desc{
+      margin: -12px 0px 9px 28px;
+      font-size: 13px;
+     }
+     @media (max-width: 800px) {
+      #box{
+        width: 35%;
+        margin-top: -23%;
+        margin-left: 36%;
+        height: 13%;
+
+      }
+      #search-box {
+        width: 250px;
+        margin-top: 72px;
+        margin-left: 10px;
+ 
+        height: 32px;
+        }
+        .search-result li {
+          margin-left: 10px;
+          width: 239px;
+          height: 37px;
+          padding: 5px;
+        }
+    }
+    @media (max-width: 600px) {
+      #box{
+        width: 40%;
+        margin-top: -28%;
+        margin-left: 26%;
+        height: 13%;
+
+      }
+      #search-box {
+        width: 150px;
+        margin-top: 72px;
+        margin-left: 10px;
+ 
+        height: 32px;
+        }
+        .search-result li {
+          margin-left: 10px;
+          width: 139px;
+          height: 37px;
+          padding: 5px;
+        }
+        .search-result .placedesc{
+          font-size: 9px;
+        }
+        .search-result li a {
+          font-size: 16px;
+        }
+        .box-name{
+          font-size: 20px;
+        }
+        .box-desc{
+         margin: -12px 0px 9px 19px;
+         font-size: 12px;
+        }
+    }
+    @media (max-width: 400px) {
+      #box{
+        width: 40%;
+        margin-top: -50%;
+        margin-left: 10%;
+        height: 13%;
+      }
+      .search-result .placedesc{
+        display: none;
+      }
+      .search-result li {
+        height: 17px;
+
+      }
+      .search-result li a {
+        font-size: 13px;
+      }
+      .placeid{
+        font-size: smaller;
+        padding: 0.3em 0.2em 0.1em 0.2em;
+        height: 1.3em;
+        margin-right: .8em;
+        border-radius: 7px;
+      }
+      .box-name{
+        font-size: 14px;
+      }
+      .box-desc{
+        margin: -12px 0px 9px -4px;
+        font-size: 11px;
+       }
+       #box .text {
+        padding: 11px;
+        font-size: 12px;
+        
+      }
+      #box .text .close {
+        font-size: 10px;
+        padding: 0px 3px 2px 3px;
+      }
+    }
+    .mylocation{  
+    margin-top: -121px;
+    padding: 4px;
+    position: relative;
+    float: right;
+    margin-right: 9px;
+    width: 24px;
+    background-color: white;
+    border-radius: 6px;
+
+     }
+     .mylocation:hover{
+      background-color: rgb(223, 219, 219);
+      cursor: pointer;
+     }  
